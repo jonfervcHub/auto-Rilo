@@ -7,10 +7,10 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 public class LoguinPageStepDefinitions {
 
     @Entonces("inicia sesion con {string} y {string}")
-    public void iniciaSesionConUsuarioYClave() {
+    public void iniciaSesionConUsuarioYClave(String usuario, String clave) {
+        System.out.println("Ruptura" + usuario + clave);
         theActorInTheSpotlight().attemptsTo(
 
         );
-        System.out.println("Ruptura");
     }
 }
